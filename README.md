@@ -1,3 +1,8 @@
+# Modification
+Allow the virtual machine to load multiply obj files at the same time.
+Example usage:
+`python lc3.py file1.obj file2.obj file3.obj`
+
 # LC-3 Virtual Machine
 Little Computer 3, or [LC-3](https://en.wikipedia.org/wiki/LC-3), is a type of computer educational programming language, an assembly language, which is a type of low-level programming language.
 This is a Python implementation of the LC-3 virtual machine.

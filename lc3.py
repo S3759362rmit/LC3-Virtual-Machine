@@ -7,9 +7,8 @@ import sys
 PC_START = 0x3000
 
 
-def read_Rom_file(name):
-    with open(name, 'br') as image:
-        load_image(image)
+def read_Rom_file(*names):
+    load_image(*names)
 
 
 def main():
@@ -18,7 +17,7 @@ def main():
         exit(2)
 
     reg_write(Registers.PC, PC_START)
-    read_Rom_file(sys.argv[1])
+    read_Rom_file(*sys.argv[1:])
 
     try:
         while True:
